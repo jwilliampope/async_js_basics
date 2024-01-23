@@ -1,6 +1,6 @@
 const posts = [
-  { title: "Post One", body: "This is Post One" },
-  { title: "Post Two", body: "This is Post Two" }
+  { title: "POST ONE", body: "Post One text" },
+  { title: "POST TWO", body: "Post Two text" }
 ]
 
 function getPosts() {
@@ -17,7 +17,6 @@ function createPost(post) {
   return new Promise((res, rej) => {
     setTimeout(() => {
       posts.push(post)
-
       const error = false
 
       if (!error) {
@@ -29,6 +28,6 @@ function createPost(post) {
   })
 }
 
-createPost({ title: "Post Three", body: "This is Post Three" })
+createPost({ title: "POST THREE", body: "Post Three text" })
   .then(getPosts)
   .catch(err => console.log(err))
