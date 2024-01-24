@@ -66,7 +66,7 @@ function createPost(post) {
 //   .then(getPosts)
 //   .catch(err => console.log(err))
 
-// Promise.all
+// Promise.all instead of the above block
 const promise1 = Promise.resolve("RESOLVED")
 const promise2 = 200
 const promise3 = new Promise((resolve, reject) => setTimeout(resolve, 2000, "COMPLETED"))
